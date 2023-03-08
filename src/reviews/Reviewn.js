@@ -85,7 +85,7 @@ const handleComment = (e) => {
       };
       setSent(true);
   try {
-    const response = await api.delete(`/deleterev/${revid}`, review);
+    const response = await api.delete(`/deletereview/${reviews}`, review);
     console.log(response.data);
     
   } catch (error) {
