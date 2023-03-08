@@ -26,6 +26,11 @@ public class ReviewControler {
 		 revservice.deletedata(revid);
 		 return "deleted";
 	 }
+	@DeleteMapping("/deletereview/{reviews}")
+	 public String deleteReviewByDesig(@PathVariable("reviews")String reviews) {
+		 revservice.deleteReviewByDesig(reviews);
+		 return "deleted";
+	 }
 	
 	
 }
