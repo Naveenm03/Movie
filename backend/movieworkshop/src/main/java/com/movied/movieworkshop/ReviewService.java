@@ -18,6 +18,11 @@ public class ReviewService {
     public void deletedata(int reviews) {
 		repo.deleteById(reviews);
 	}
+public void deleteReviewByDesig(String reviews) {
+		repo.deleteReviewByDesig(reviews);
+		
+		
+	}
 
 
 
